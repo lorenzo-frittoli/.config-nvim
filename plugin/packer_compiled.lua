@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["autoclose.nvim"] = {
+    loaded = true,
+    path = "/home/sken/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
+    url = "https://github.com/m4xshen/autoclose.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/sken/.local/share/nvim/site/pack/packer/start/harpoon",
