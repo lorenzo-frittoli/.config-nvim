@@ -24,4 +24,21 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig",
     }
     use 'm4xshen/autoclose.nvim'
+    use {
+        -- Autocompletion
+        'hrsh7th/nvim-cmp',
+        -- Snippet Engine & its associated nvim-cmp source
+        'L3MON4D3/LuaSnip',
+        'saadparwaiz1/cmp_luasnip',
+
+        -- Adds LSP completion capabilities
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-path',
+
+        -- Adds a number of user-friendly snippets
+        'rafamadriz/friendly-snippets',
+
+        -- Additional lua configuration, makes nvim stuff amazing!
+        'folke/neodev.nvim',
+    }
 end)
